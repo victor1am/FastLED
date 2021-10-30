@@ -1,7 +1,7 @@
 #define FASTLED_INTERNAL
 #include <FastLED.h>
 
-#define NUM_LEDS 60
+#define NUM_LEDS 60 //Replace 60 with the number of LEDs on your strip, it won't work unless you change this
 #define LED_PIN 2
 
 CRGB leds [NUM_LEDS];
@@ -20,7 +20,7 @@ void loop() {
 
 leds[sinBeat] = CRGB::Blue;
 leds[sinBeat2] = CRGB::Red;
-leds[sinBeat3] = CRGB::Green2;
+leds[sinBeat3] = CRGB::Green;
 
 fadeToBlackBy (leds, NUM_LEDS, 100);
 
